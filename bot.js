@@ -35,7 +35,7 @@ message.author.send(`**مدة الرابط : يـوم
 });
  
 client.on('message', msg => {
-if (msg.content.startsWith(prefix + 'cal')) {
+if (msg.content.startsWith(prefix + 'MTL')) {
   let args = msg.content.split(" ").slice(1);
       const question = args.join(' ');
   if (args.length < 1) {
@@ -100,7 +100,7 @@ m.sendMessage(args)
  
  
  client.on('message' , function (message){
-      var token = 'NjQ2MDI5MjkzMjcyNTYzNzQz.XdLLsQ.0xYfrkd8V_z-UviQtDWgee3FM4s
+      var token = 'NTcwMzcxNjM0MDYyNjg4Mjc2.XdLULQ.HEB_461ldPgxYQ4QkkhxZfXKpys
 '; // التوكن هنا بس
       if(message.content === '!restart') {
 if(message.author.id !== '284984521768697856') return message.reply('**الامر خاص بـ صاحب البوت وشكرا**');
@@ -137,7 +137,7 @@ client.on('message', message => {
   client.on('message', async message => {
 if(message.author.bot) return;
 if (message.channel.guild) {
-if (message.content.startsWith(prefix + `!cat`)) {
+if (message.content.startsWith(prefix + `!MTL`)) {
             const { body } = await snekfetch.get("http://aws.random.cat/meow");
             return message.channel.send({ file: body.file });
 }}});
